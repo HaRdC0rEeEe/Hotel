@@ -360,9 +360,14 @@ select {
 }
 
 .carousel-caption>* {
-    color: rgb(0, 0, 64);
+
+    color: rgb(47, 47, 189);
     font-size: 1.3rem;
     font-weight: 500;
+}
+
+.carousel-caption {
+    margin-top: 80px;
 }
 
 .footer {
