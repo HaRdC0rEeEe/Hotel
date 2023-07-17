@@ -125,6 +125,7 @@ select {
 
     .sr-only {
         font-size: 1.4rem !important;
+
     }
 
 }
@@ -364,11 +365,20 @@ select {
     color: rgb(47, 47, 189);
     font-size: 1.3rem;
     font-weight: 500;
+
 }
 
 .carousel-caption {
+    margin: 0 auto;
     margin-top: 80px;
+    background-color: rgba(128, 128, 128, 0.281);
+    width: 200px;
+    border-radius: 30px;
+    height: 120px;
+
 }
+
+
 
 .footer {
     bottom: 0;
