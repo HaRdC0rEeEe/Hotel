@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    /* border: 1px white solid; */
+}
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+}
+
+
+
+
+.rem2 {
+    font-size: 2rem;
+}
+
+
+
+
+.home-icon:hover,
+.burger-icon:hover {
+    stroke: #17c1ff;
+    stroke-width: 0.5px;
+    transform: translateX(30px) scale(1.3);
+    transition-duration: 0.5s;
+    border-color: #17c1ff;
+    filter: drop-shadow(2px 2px 10px 10px #17c1ff);
+}
+
+.navbar-header {
+    float: top;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: #333;
+    z-index: 100;
+    gap: 10rem;
+    padding-left: 20px;
+    /* Add a z-index to ensure it appears above other elements if necessary */
+}
+
+.home-icon {
+    z-index: 1;
+
+}
+
+.burger-icon,
+.dropdown-burger {
+    z-index: 0;
+    display: none;
+}
+
+
+.burger-icon .dropdown-menu {
+    /* position: absolute; */
+    top: 100%;
+    left: 0;
+
+    /* Zajistěte, aby dropdown byl nad ostatními prvky */
+}
+
+
+
+@media (max-width: 768px) {
+    .home-icon {
+        display: none;
+    }
+
+    .burger-icon,
+    .dropdown-burger {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .navbar li {
+        display: none;
+
+    }
+
+    .navbar-header {
+        padding-left: 10px;
+        gap: 10px;
+    }
+
+    .img-thumbnail {
+        display: none;
+    }
+
+    .accordion {}
+
+    #accordion>* {
+        margin: 0 auto;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .accordion {
+
+        margin: 0 auto;
+    }
+
+    .carousel-inner {
+        margin-top: 200px;
+    }
+
+    .footer>* {
+
+        height: 100px;
+        width: 100%;
+        background-color: #00678c;
+        font-size: 1.5rem;
+    }
+
+
+    .sr-only {
+        font-size: 1.4rem !important;
+    }
+
+}
+
+.navbar-header>* {
+    gap: 1rem;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+
+#bg-image {
+    width: "100%";
+    z-index: -100;
+    position: relative;
+}
+
+
+
+.accordion button {
+    font-size: 2rem;
+}
+
+
+
+
+.card-body {
+
+    height: 360px;
+    position: relative;
+    min-width: 200px;
+}
+
+.card img {
+    width: 90%;
+    min-width: 60%;
+}
+
+.card-body .btn-buy {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 6px;
+    border-color: #17c1ff;
+    background-color: #00678c;
+    color: #17c1ff;
+    min-width: 100%;
+
+
+}
+
+.card-body .btn-buy:hover {
+
+    transform: scale(1.03) translateY(2px);
+    box-shadow: 2px 2px 20px 5px #17c1ff;
+    transition-property: transform, box-shadow;
+    transition-duration: 0.2s, 0.2s;
+    border-radius: 5px;
+    border-color: #17c1ff;
+    background-color: #00678c;
+    color: #17c1ff;
+    font-size: 2.1rem;
+
+
+
+}
+
+.card {
+    border-radius: 0;
+    border-color: #17c1ff;
+    box-shadow: 2px 2px 10px 1px #17c1ff;
+    background-color: #00678c15;
+    color: #00678c;
+
+}
+
+.card hr {
+    color: #00678c;
+
+}
+
+/* objednávková karta */
+.accordion-button {
+
+    width: 550px;
+    border-color: #17c1ff;
+    color: #00d9ff;
+    background-color: #00678c15;
+    /* overridnutí after-click shadowu u accordionu */
+
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.15rem #17c1ff;
+}
+
+.accordion-button[aria-expanded="true"] {
+
+    background-color: #00678c15;
+    color: #17c1ff;
+}
+
+.card-title {
+    font-size: 1.4rem;
+}
+
+.heading-h1 {
+    color: rgb(0, 96, 128);
+    font-weight: 300;
+    opacity: 0.9;
+    width: 300px;
+
+}
+
+.hr-style {
+    position: relative;
+}
+
+.hr-style:after {
+    content: "";
+    top: -4px;
+    left: -8px;
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    background-color: aqua;
+    box-shadow: 2px 2px 10px 1px #17c1ff;
+}
+
+.font-1 {
+    padding-top: 30px;
+    font-family: 'Caprasimo', cursive;
+}
+
+.font-2 {
+    font-family: 'Martian Mono', monospace;
+}
+
+.img-thumbnail {
+
+    float: right;
+}
+
+#modalLabel {
+    font-size: 2rem;
+    border-radius: 20px;
+    color: #00678c;
+}
+
+.close {
+    font-size: 3rem;
+    padding-right: 20px;
+    border: none;
+    color: #00678c;
+}
+
+.form-style {
+
+    border: 1px solid;
+    border-radius: 20px;
+    border-color: #17c1ff;
+    color: #00678c;
+    background-color: #00678c15;
+
+    box-shadow: 2px 2px 10px 1px #17c1ff;
+}
+
+.form-style>* {
+    margin: 10px;
+}
+
+.form-style label {
+    font-size: 1.7rem;
+
+}
+
+.form-style input:focus {
+    border-color: #17c1ff;
+    box-shadow: 2px 2px 10px 1px #17c1ff;
+}
+
+#gridCheck {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+}
+
+.required {
+    color: blue;
+
+}
+
+.btn-primary {
+    width: 300px;
+}
+
+
+.modal-dialog {
+    --bs-modal-width: 1500px;
+    --bs-modal-zindex: -1080;
+    margin: 0 auto;
+
+}
+
+.modal-content {
+    width: 1000px;
+    height: 800px;
+}
+
+.modal {
+    --bs-modal-zindex: 1056;
+
+
+}
+
+#modal-formID {
+    --bs-modal-zindex: 1055;
+}
+
+
+.carousel-item {
+
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.sr-only {
+    color: blue;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-caption>* {
+    color: rgb(0, 0, 64);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.footer {
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    background-color: #00678c;
+    font-size: 2rem;
+}
